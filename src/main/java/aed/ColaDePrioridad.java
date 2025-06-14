@@ -22,8 +22,9 @@ public class ColaDePrioridad<T extends Comparable<T>> {
     }
 
     public void floyd(){
-        // Algoritmo de Floyd -> O(n)
-        // hojas van desde n/2 hasta n-1 (se pueden ignorar) y ordeno los nodos internos
+/*  Algoritmo de Floyd -> O(n)
+
+hojas van desde n/2 hasta n-1 (se pueden ignorar) y ordeno los nodos internos */
         for (int i = this.heap.size()/2; i >= 0; i--) {
             this.siftDown(i);
         }
